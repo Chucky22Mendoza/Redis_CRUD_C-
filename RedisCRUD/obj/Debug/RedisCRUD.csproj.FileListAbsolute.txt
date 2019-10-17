@@ -27,3 +27,7 @@ C:\Users\login\source\repos\RedisCRUD\RedisCRUD\bin\Debug\System.Memory.xml
 C:\Users\login\source\repos\RedisCRUD\RedisCRUD\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\login\source\repos\RedisCRUD\RedisCRUD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\login\source\repos\RedisCRUD\RedisCRUD\obj\Debug\RedisCRUD.csprojAssemblyReference.cache
+C:\Users\login\source\repos\RedisCRUD\RedisCRUD\bin\Debug\RedisCRUD.exe.manifest
+C:\Users\login\source\repos\RedisCRUD\RedisCRUD\bin\Debug\RedisCRUD.application
+C:\Users\login\source\repos\RedisCRUD\RedisCRUD\obj\Debug\RedisCRUD.exe.manifest
+C:\Users\login\source\repos\RedisCRUD\RedisCRUD\obj\Debug\RedisCRUD.application
