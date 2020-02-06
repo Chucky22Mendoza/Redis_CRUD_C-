@@ -90,5 +90,33 @@ namespace RedisCRUD
                 Edit(true); //Read only
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            using (RedisClient client = new RedisClient("localhost", 6379))
+            {
+                IRedisTypedClient<Phone> phone = client.As<Phone>();
+                phone.DeleteAll();
+                phoneBindingSource.Clear();
+
+                String new_id = "J_0";
+                String new_manufacturer = "010-Enterprise-";
+                String new_Model = "902-XXJ-";
+
+                for(int i = 0; i<3000; i++)
+                {
+                    Phone p = new Phone();
+                    p.ID = new_id + i;
+                    p.Manufacturer = new_manufacturer + i;
+                    p.Model = new_Model + i;
+
+                    phone.Store(p);
+                }
+
+                phoneBindingSource.DataSource = phone.GetAll();
+                MetroFramework.MetroMessageBox.Show(this, "Your data has been succesfully reseted.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearText();
+            }
+        }
     }
 }
